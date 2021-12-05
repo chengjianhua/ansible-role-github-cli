@@ -1,5 +1,6 @@
 galaxy_info:
   author: Jianhua Cheng
+  role_name: github_cli
   description: https://github.com/chengjianhua
 
   # If the issue tracker for your role is not on github, uncomment the
