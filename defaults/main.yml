@@ -1,0 +1,3 @@
+---
+# defaults file for ansible-role-github-cli
+github_cli_gpg_path: /usr/share/keyrings/githubcli-archive-keyring.gpg

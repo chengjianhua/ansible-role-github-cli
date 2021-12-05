@@ -1,0 +1,12 @@
+---
+# tasks file for ansible-role-github-cli
+- name: Add an Apt signing key to a specific keyring file
+  ansible.builtin.apt_key:
+    url: https://cli.github.com/packages/githubcli-archive-keyring.gpg
+    keyring: "{{  github_cli_gpg_path }}"
+
+- name: Add specified repository into sources list using specified filename
+  ansible.builtin.apt_repository:
+    repo: "deb [signed-by={{ github_cli_gpg_path }}] https://cli.github.com/packages stable main"
+    state: present
+    filename: github-cli
