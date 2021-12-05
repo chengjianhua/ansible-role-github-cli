@@ -1,5 +1,7 @@
 ---
 # tasks file for ansible-role-github-cli
+# see https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+
 - name: Add an Apt signing key to a specific keyring file
   ansible.builtin.apt_key:
     url: https://cli.github.com/packages/githubcli-archive-keyring.gpg
